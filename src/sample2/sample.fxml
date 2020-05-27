@@ -1,0 +1,31 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<VBox fx:controller="sample2.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <stylesheets>
+    <URL value="@/css/style.css"/>
+    </stylesheets>
+    <TextArea fx:id="textArea" editable="false" prefWidth="150"/>
+    <GridPane
+            hgap="10" vgap="10">
+        <Button fx:id="one" onAction="#one" text="1" GridPane.rowIndex="0" GridPane.columnIndex="10"/>
+        <Button fx:id="two" onAction="#two" text="2" GridPane.rowIndex="0" GridPane.columnIndex="12"/>
+        <Button fx:id="three" onAction="#three" text="3" GridPane.rowIndex="0" GridPane.columnIndex="14"/>
+        <Button fx:id="four" onAction="#four" text="4" GridPane.rowIndex="1" GridPane.columnIndex="10"/>
+        <Button fx:id="five" onAction="#five" text="5" GridPane.rowIndex="1" GridPane.columnIndex="12"/>
+        <Button fx:id="six" onAction="#six" text="6" GridPane.rowIndex="1" GridPane.columnIndex="14"/>
+        <Button fx:id="seven" onAction="#seven" text="7" GridPane.rowIndex="2" GridPane.columnIndex="10"/>
+        <Button fx:id="eight" onAction="#eight" text="8" GridPane.rowIndex="2" GridPane.columnIndex="12"/>
+        <Button fx:id="nine" onAction="#nine" text="9" GridPane.rowIndex="2" GridPane.columnIndex="14"/>
+        <Button fx:id="zero" onAction="#zero" text="0" GridPane.rowIndex="3" GridPane.columnIndex="12"/>
+        <Button fx:id="minus" onAction="#minus" text="-" GridPane.rowIndex="0" GridPane.columnIndex="9"/>
+        <Button fx:id="plus" onAction="#plus" text="+" GridPane.rowIndex="1" GridPane.columnIndex="9"/>
+        <Button fx:id="multiply" onAction="#multiply" text="*" GridPane.rowIndex="2" GridPane.columnIndex="9"/>
+        <Button fx:id="divide" onAction="#divide" text="/" GridPane.rowIndex="3" GridPane.columnIndex="9"/>
+        <Button fx:id="equally" onAction="#equally" text="=" GridPane.rowIndex="3" GridPane.columnIndex="10"/>
+        <Button fx:id="clear" onAction="#clear" text="C" GridPane.rowIndex="3" GridPane.columnIndex="14"/>
+
+
+    </GridPane>
+</VBox>
